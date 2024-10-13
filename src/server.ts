@@ -24,7 +24,7 @@ server.use(mainRoutes);
 
 // Middleware para lidar com páginas não encontradas (404)
 server.use((req, res) => {
-    res.status(404).send('Página não encontrada');
+    res.render('pages/404')
 });
 
 // Iniciando o servidor na porta definida no arquivo .env ou na porta 3000 como padrão
